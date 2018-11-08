@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es6",
+    "strict": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "sourceMap": true,
+    "outDir": "./target/",
+    "rootDir": "./src/",
+    // Whitelist to avoid bringing in all types
+    "types": ["copy-webpack-plugin", "webpack"]
+  },
+  "files": ["./src/webpack.config.ts"]
+}

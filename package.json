@@ -1,0 +1,53 @@
+{
+  "name": "unsplash-uploader-prototype",
+  "private": true,
+  "scripts": {
+    "compile": "rm -rf ./config/target/ && tsc --project config && rm -rf ./target/ && webpack --config config/target/webpack.config.js",
+    "compile:watch": " npm run compile -- --watch",
+    "start:server": "http-server -c-1 ./target/",
+    "format": "prettier --write './**/*.{ts,tsx,js,json,md}' '.prettierrc'",
+    "typecheck": "tsc --noEmit",
+    "typecheck:watch": "npm run typecheck -- --watch",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@types/copy-webpack-plugin": "^4.4.1",
+    "@types/lodash": "^4.14.116",
+    "@types/pretty-bytes": "^5.1.0",
+    "@types/react": "^16.4.9",
+    "@types/react-dom": "^16.0.7",
+    "@types/react-redux": "6.0.9",
+    "@types/recompose": "^0.26.4",
+    "@types/uuid": "^3.4.3",
+    "@types/webpack": "^4.4.9",
+    "funfix-core": "^7.0.1",
+    "lodash": "^4.17.10",
+    "pretty-bytes": "^5.1.0",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-redux": "^5.0.7",
+    "recompose": "^0.30.0",
+    "redux": "4.0.0",
+    "redux-observable": "^1.0.0",
+    "rxjs": "6.2.2",
+    "rxjs-etc": "^9.0.0",
+    "unionize": "1.0.1",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.3.2",
+    "b64-to-blob": "^1.2.19",
+    "copy-webpack-plugin": "^4.5.2",
+    "http-server": "^0.11.1",
+    "jest": "^23.6.0",
+    "prettier": "^1.14.2",
+    "redux-devtools-extension": "^2.13.5",
+    "rxjs-spy": "^7.2.0",
+    "ts-jest": "^23.10.1",
+    "ts-loader": "^5.0.0",
+    "ts-unused-exports": "^2.0.11",
+    "typescript": "^3.0.1",
+    "webpack": "^4.16.5",
+    "webpack-cli": "^3.1.0"
+  }
+}

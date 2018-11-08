@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es2015",
+    "strict": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "sourceMap": true,
+    "jsx": "react",
+    "outDir": "./target/",
+    "rootDir": "./src/",
+    "lib": ["dom", "es2015", "es2016.array.include", "es2017.object"],
+    "esModuleInterop": true
+  },
+  // We use `include` instead of `files` to workaround a bug whereby some refactorings don't work:
+  // https://github.com/Microsoft/TypeScript/issues/24857
+  "include": ["./src/**/*"]
+}
