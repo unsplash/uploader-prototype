@@ -1,5 +1,9 @@
 # unsplash-uploader-prototype
 
+https://unsplash.github.io/uploader-prototype/
+
+![Screenshot](./screenshot.png)
+
 ## Development
 
 ```sh
