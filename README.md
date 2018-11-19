@@ -2,7 +2,7 @@
 
 https://unsplash.github.io/uploader-prototype/
 
-![Screenshot](./screenshot.png)
+<img width="500" src="./screenshot.png" />
 
 ## Development
 
