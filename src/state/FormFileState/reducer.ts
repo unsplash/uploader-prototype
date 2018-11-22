@@ -12,7 +12,7 @@ import {
 } from '../types';
 import { FormFileAction } from '../uploader-action';
 import {
-  updatedFetchDimensionsRequestTransition,
+  updateFetchDimensionsRequestTransition,
   updateFetchPresignedUrlRequestTransition,
   updateUploadToS3RequestTransition,
 } from './transitions';
@@ -51,7 +51,7 @@ const formFileCurrentStateReducer = (
   FormFileAction.match(
     {
       UpdateFileFetchDimensionsRequest: applyOnFetchingDimensionsState(
-        updatedFetchDimensionsRequestTransition(file),
+        updateFetchDimensionsRequestTransition(file),
         prevState,
       ),
       UpdateFileFetchPresignedUrlRequest: applyOnValidFetchingPresignedUrlState(

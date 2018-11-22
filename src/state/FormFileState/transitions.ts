@@ -33,7 +33,7 @@ const fetchedDimensionsTransition = (
   }
 };
 
-export const updatedFetchDimensionsRequestTransition = (file: File) => (
+export const updateFetchDimensionsRequestTransition = (file: File) => (
   fetchingDimensions: FormFetchingDimensionsFileCurrentState,
 ) => ({
   fetchDimensionsRequest: updatedFetchDimensionsRequest,
